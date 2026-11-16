@@ -2,7 +2,7 @@ const pergunta1 = document.querySelectorAll('input[name="pergunta1"]');
 pergunta1.forEach(function(resposta) {{
   resposta.addEventListener('change', function() {
     const resposta = document.getElementById('resposta1');
-    if (this.value === 'a') {
+    if (this.value === 'b') {
       resposta.textContent = 'Muito bem,vc acertou!';
       resposta.style.color = 'green';
     }else {
@@ -50,6 +50,90 @@ pergunta4.forEach(function(resposta) {
       resposta.style.color = 'green';
     }else {
       resposta.textContent = 'Humn....., parece que tem faltado EBD, a resposta correta é Êutico';
+      resposta.style.color = 'red';
+    }
+  });
+});
+
+const pergunta5 = document.querySelectorAll('input[name="pergunta5"]');
+pergunta5.forEach(function(resposta) {
+  resposta.addEventListener('change', function() {
+    const resposta = document.getElementById('resposta5');
+    if (this.value === 'b') {
+      resposta.textContent = 'Vc está indo bem!';
+      resposta.style.color = 'green';
+    }else {
+      resposta.textContent = 'Que pena, a resposta correta é Saul';
+      resposta.style.color = 'red';
+    }
+  });
+});
+
+const pergunta6 = document.querySelectorAll('input[name="pergunta6"]');
+pergunta6.forEach(function(resposta) {
+  resposta.addEventListener('change', function() {
+    const resposta = document.getElementById('resposta6');
+    if (this.value === 'a') {
+      resposta.textContent = 'Tá lendo a Bíblia em casa, hein? Parabéns, vc acertou!';
+      resposta.style.color = 'green';
+    }else {
+      resposta.textContent = 'Não foi dessa vez, a resposta correta é Sansão';
+      resposta.style.color = 'red';
+    }
+  });
+});
+
+const pergunta7 = document.querySelectorAll('input[name="pergunta7"]');
+pergunta7.forEach(function(resposta) {
+  resposta.addEventListener('change', function() {
+    const resposta = document.getElementById('resposta7');
+    if (this.value === 'd') {
+      resposta.textContent = 'Vc está indo muito bem, parabéns!';
+      resposta.style.color = 'green';
+    }else {
+      resposta.textContent = 'Não foi dessa vez, a resposta correta é Daniel';
+      resposta.style.color = 'red';
+    }
+  });
+});
+
+const pergunta8 = document.querySelectorAll('input[name="pergunta8"]');
+pergunta8.forEach(function(resposta) {
+  resposta.addEventListener('change', function() {
+    const resposta = document.getElementById('resposta8');
+    if (this.value === 'b') {
+      resposta.textContent = 'Isso aí, parabéns!';
+      resposta.style.color = 'green';
+    }else {
+      resposta.textContent = 'Não foi dessa vez, a resposta correta é 120 anos';
+      resposta.style.color = 'red';
+    }
+  });
+});
+
+const pergunta9 = document.querySelectorAll('input[name="pergunta9"]');
+pergunta9.forEach(function(resposta) {
+  resposta.addEventListener('change', function() {
+    const resposta = document.getElementById('resposta9');
+    if (this.value === 'd') {
+      resposta.textContent = 'Continue assim, vc está indo bem!';
+      resposta.style.color = 'green';
+    }else {
+      resposta.textContent = 'Não foi dessa vez, a resposta correta é Matias';
+      resposta.style.color = 'red';
+    }
+  });
+});
+
+const pergunta10 = document.querySelectorAll('input[name="pergunta10"]');
+pergunta10.forEach(function(resposta) {
+  resposta.addEventListener('change', function() {
+    const resposta = document.getElementById('resposta10');
+    if (this.value === 'd') {
+      resposta.textContent = 'Tá lendo a Bíblia em casa, hein? Parabéns, vc acertou!';
+      resposta.style.color = 'green';
+    }else {
+      resposta.textContent = 'Não foi dessa vez, a resposta correta é Oséias';
       resposta.style.color = 'red';
     }
   });
