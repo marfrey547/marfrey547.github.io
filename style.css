@@ -1,16 +1,11 @@
-/*tema claro*/
 body{
     background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
     font-family: Arial, sans-serif;
     text-align: center;
     transition: background-color 0.5s ease;
+    
 }
 
-/*tema escuro*/
-.escuro{
-    background-color: #222;
-    color: #fefefe;
-}
 
 h1{
     color: #111;
@@ -29,9 +24,22 @@ h4{
 }
 
 div{
-    background: #fefefe;
+    background-color: #fefefe;
+    color: #111;
     text-align: left;
     border: solid 2px #111;
     border-radius: 10px;
     padding: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url(escuro.jpg);
+    }
+
+    h1, h4, div {
+        background-color: #333;
+        color: #fff;
+        border-color: #fff;
+    }
 }
